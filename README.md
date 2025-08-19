@@ -21,3 +21,5 @@ obligatory unix porn post: https://www.reddit.com/r/unixporn/comments/1mu9q68/i3
 <img width="2560" height="1600" alt="dtrofbfgp" src="https://github.com/user-attachments/assets/77a1a2ab-7985-4daf-8b76-1e254eae0ab7" />
 <img width="2560" height="1600" alt="dt2" src="https://github.com/user-attachments/assets/a4545fb1-8229-4e82-a08a-f48092404824" />
 <img width="2560" height="1600" alt="dt" src="https://github.com/user-attachments/assets/5aa2fcf7-32fc-436b-becc-215b7ed0e14b" />
+<img width="2560" height="1600" alt="tmux session" src="https://github.com/user-attachments/assets/9800c163-a208-4e63-8499-4884f82e1b6b" />
+<img width="4032" height="2520" alt="namibia2kpxlD" src="https://github.com/user-attachments/assets/1210096c-9ca0-4604-8369-dbed4c14af5e" />
