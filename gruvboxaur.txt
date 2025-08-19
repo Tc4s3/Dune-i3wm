@@ -1,0 +1,1 @@
+yay -S xcursor-simp1e-gruvbox-light xcursor-simp1e-gruvbox-dark gruvbox-gtk-theme-git gruvbox-icon-theme

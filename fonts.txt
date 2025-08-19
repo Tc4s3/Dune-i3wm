@@ -1,0 +1,4 @@
+fonts used are 
+noto_sans_JP
+noto_sans_SC &
+ttf-terminus-nerd
