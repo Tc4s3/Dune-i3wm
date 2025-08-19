@@ -1,0 +1,83 @@
+# Bashtop Paper theme
+# c/o @s6muel
+# inspired by @yorickpeterse's vim-paper theme at https://gitlab.com/yorickpeterse/vim-paper
+#
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#FEE686"
+
+# Main text color
+theme[main_fg]="#00"
+
+# Title color for boxes
+theme[title]="#563123"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#D18240"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#B5A17B"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#FFFADF"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#EDD796"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#00"
+
+# Cpu box outline color
+theme[cpu_box]="#00"
+
+# Memory/disks box outline color
+theme[mem_box]="#00"
+
+# Net up/down box outline color
+theme[net_box]="#00"
+
+# Processes box outline color
+theme[proc_box]="#00"
+
+# Box divider line and small boxes line color
+theme[div_line]="#00"
+
+# Temperature graph colors
+theme[temp_start]="#55"
+theme[temp_mid]="#00"
+theme[temp_end]="#CC3E28"
+
+# CPU graph colors
+theme[cpu_start]="#220F08"
+theme[cpu_mid]="#D18240"
+theme[cpu_end]="#E8CB74"
+
+# Mem/Disk free meter
+theme[free_start]="#D18240"
+theme[free_mid]=""
+theme[free_end]="#D18240"
+
+# Mem/Disk cached meter
+theme[cached_start]="#52595C"
+theme[cached_mid]=""
+theme[cached_end]="#52595C"
+
+# Mem/Disk available meter
+theme[available_start]="#220f08"
+theme[available_mid]=""
+theme[available_end]="#220F08"
+
+# Mem/Disk used meter
+theme[used_start]="#B5A178"
+theme[used_mid]=""
+theme[used_end]="#B5A178"
+
+# Download graph colors
+theme[download_start]="#52595c"
+theme[download_mid]="#00"
+theme[download_end]="#52595c"
+
+# Upload graph colors
+theme[upload_start]="#E8CB74"
+theme[upload_mid]="#00"
+theme[upload_end]="#E8CB74"

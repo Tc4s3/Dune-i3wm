@@ -1,0 +1,11 @@
+[Desktop Entry]
+DefaultProfile=Arrakis.profile
+
+[General]
+ConfigVersion=1
+
+[MainWindow]
+MenuBar=Disabled
+
+[UiSettings]
+ColorScheme=

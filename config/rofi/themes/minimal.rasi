@@ -1,0 +1,76 @@
+/*
+ * ROFI color theme
+ *
+ * Based on Something Found in the Internet
+ *
+ * User: Contributors
+ * Copyright: *!
+ */
+
+configuration {
+  font: "Terminess Nerd Font Mono Bold 16";
+  drun {
+    display-name: "[Mn3mo5yn3]$ ";
+  }
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  bg: #e8cb74;
+  bg-alt: #b5a178;
+  fg: #563123;
+  fg-alt: #d18240;
+
+  background-color: @bg;
+  text-color: @fg;
+}
+
+window {
+  background: @bg;
+  foreground: @fg;
+  width: 15%;
+  location: southwest;
+  anchor: southwest;
+}
+
+mainbox {
+  children: [ listview, inputbar ];
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+entry {
+  padding: 12px 0;
+}
+
+prompt {
+  padding: 12px;
+}
+
+listview {
+  lines: 5;
+  reverse: true;
+}
+
+element {
+  children: [element-text];
+}
+
+element-text {
+  padding: 12px;
+  text-color: @fg-alt;
+}
+
+element-text selected {
+  text-color: @fg;
+}
