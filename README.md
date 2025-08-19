@@ -19,9 +19,6 @@ obligatory unix porn post: https://www.reddit.com/r/unixporn/comments/1mu9q68/i3
 & screenies
 
 <img width="1920" height="1080" alt="w2" src="https://github.com/user-attachments/assets/03c2a7e9-cebd-4ce2-bf3a-7a5ac1d8b89d" />
-![tmux session](https://github.com/user-attachments/assets/cb0d7ed7-2491-421c-a473-32f40e7ecfe5)
-![namibia2kpxlD](https://github.com/user-attachments/assets/dfaf72aa-5c36-41b6-b626-aa4a28199b4e)
-
 <img width="2560" height="1600" alt="dtrofbfgp" src="https://github.com/user-attachments/assets/77a1a2ab-7985-4daf-8b76-1e254eae0ab7" />
 <img width="2560" height="1600" alt="dt2" src="https://github.com/user-attachments/assets/a4545fb1-8229-4e82-a08a-f48092404824" />
 <img width="2560" height="1600" alt="dt" src="https://github.com/user-attachments/assets/5aa2fcf7-32fc-436b-becc-215b7ed0e14b" />
