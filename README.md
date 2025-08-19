@@ -1,6 +1,7 @@
 # Dune-i3wm
-- To quote here_for_the_kittens "My desert. My Arch. My Dune."
-My Dune/Retro inspired i3wm config
+To quote here_for_the_kittens "My desert. My Arch. My Dune."
+
+My Dune/Retro inspired i3wm config.
 
 These are the dot files for my retro computing / dune inspired rice, the gtk stuff was configured 
 with nwg, wallpaper is a heavy edit of this;
