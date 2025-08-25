@@ -10,10 +10,10 @@ https://wall.alphacoders.com/big.php?i=1191585 ;
 the fetch is stored under "bashfetch" in the scripts direcory and is a basic bash script that fetches
 basic system info, bring your own ascii art.
 
-the other scripts are for my rofi launching, showing colors in bashfetch.sh and my polybar modules
+the other scripts are for my rofi launching, showing colors in bashfetch.sh, showing low battery warnings with dunst and my polybar modules
 everything else is under config & Konsole.
 
-ive included two lists, one containingthe gruvbox aur pkgs im using and another listing the fonts i use, enjoy!
+ive included two lists, one containing the gruvbox aur pkgs im using and another listing the fonts i use, enjoy!
 
 obligatory unix porn post: https://www.reddit.com/r/unixporn/comments/1mu9q68/i3wmdesert_power_arch/
 & screenies
