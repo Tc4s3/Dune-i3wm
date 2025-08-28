@@ -1,0 +1,16 @@
+#FFFADF Off white
+#F5E8BF Pale
+#EDD796 Light tan
+#E8CB74 Sand
+#D0BA7A Sandstone
+#C3B391 Putty
+#B5A178 Dust
+#938058 Dull brown
+#FFF3DA White Peach
+#FEE6B6 Pale peach
+#F0C382 Peach
+#DCA06E Peach
+#D18240 Dull orange
+#985715 Warm brown
+#563123 Chocolate
+#220F08 Very dark brown
