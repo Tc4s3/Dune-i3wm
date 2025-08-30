@@ -1,4 +1,4 @@
-#################################################
+###############################################
 #░▒█▀▄▀█░█▀▀▄░█▀▀█░█▀▄▀█░█▀▀█░█▀▀░█░░█░█▀▀▄░█▀▀█#
 #░▒█▒█▒█░█░▒█░░▒▀▄░█░▀░█░█▄▀█░▀▀▄░█▄▄█░█░▒█░░▒▀▄#
 #░▒█░░▒█░▀░░▀░█▄▄█░▀░░▒▀░█▄▄█░▄▄▀░▄▄▄▀░▀░░▀░█▄▄█#
@@ -8,7 +8,13 @@
 set $mod Mod4
 set $mod1 Mod1
 # Custom sets
-set $bar ~/Scripts/polyboot.sh
+set $bar /home/operator/Scripts/polyboot.sh
+# Notifications by Dunst
+exec_always --no-startup-id dunst
+    # Reboot Dunst
+    bindsym $mod+d exec ~/Scripts/rbdunst.sh
+# Input remapper
+exec --no-startup-id input-remapper-gtk --load-config /home/operator/.config/input-remapper-2/config.json
 # Compositor
 exec --no-startup-id picom -b
 # Fonts
@@ -17,7 +23,13 @@ font pango: Terminess Nerd Font Bold 16
 # Title bars
 font pango: Terminess Nerd Font Bold 14
 # wallpaper
-exec_always feh --bg-fill 
+exec_always feh --bg-fill /home/operator/Pictures/namibia2kpxlD.png
+# Autostart programs
+exec --no-startup-id lxterminal
+exec --no-startup-id mullvad-vpn
+exec --no-startup-id bitwarden-desktop
+exec --no-startup-id openrgb
+exec --no-startup-id tilda -g ~/.config/tilda/config_1 -h
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
@@ -40,19 +52,22 @@ default_border pixel 6
 default_border normal
 for_window [class="firefox"] border normal 4
 for_window [floating] border normal
+for_window [class="Tilda"] border pixel 0
+
 # Gaps
-gaps outer 20
+gaps outer 30
 # Mouse organising
 tiling_drag modifier titlebar
 floating_modifier $mod
 # Terminal
-bindsym $mod+t exec konsole
+bindsym $mod+t exec lxterminal
 # Close
 bindsym $mod+x kill
 # Rofi
 bindsym $mod+space exec rofi -show drun
 # Tab between active workspaces
 bindsym $mod+Tab workspace back_and_forth
+bindsym Control+$mod+period workspace next
 # Change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -72,9 +87,16 @@ bindsym $mod+Shift+f fullscreen toggle
 # Float
 bindsym $mod+f floating toggle
     # Forced floating
+    for_window [class="Bitwarden"] floating enable, resize set 1065 840
+    for_window [class="Gpick"] floating enable, resize set 800 600
     for_window [class="Pcmanfm"] floating enable, resize set 1123 860
+    for_window [class="pavucontrol"] floating enable, resize set 780 538
+    for_window [class="ark"] floating enable, resize set 743 585
+    for_window [class="SyncTERM"] floating enable resize set 1303 977
     # Float focus
     bindsym $mod+Shift+space focus mode_toggle
+# focus the parent container
+bindsym $mod+a focus parent
 # Resize
 bindsym $mod+r mode "resize"
 mode "resize" {
@@ -119,7 +141,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws0
 #monitors
-exec --no-startup-id xrandr --output eDP-1 --primary --mode 2560x1600 --rate 60.01 --output HDMI-1-0 --mode 1920x1080 --rate 120.00 --rotate normal                                                                           
+exec --no-startup-id xrandr --output eDP-1 --primary --mode 2560x1600 --rate 60.01 --output HDMI-1-0 --mode 1920x1080 --rate 120.00 --rotate left
     # variables
         set $em HDMI-1-0 
 		set $lm eDP-1
@@ -140,16 +162,29 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # Custom keys
 	# applications
+	bindsym $mod+p exec bitwarden-desktop
+	bindsym $mod+i exec mullvad-vpn
 	bindsym $mod+g exec firefox
     bindsym $mod+s exec spectacle
     bindsym $mod+e exec pcmanfm
+    bindsym $mod+n exec ~/Scripts/fuzpad.sh
+    bindsym $mod+c exec ~/Scripts/roficalc.sh
 	# session management
-	bindsym Control+$mod+l exec "i3lock"
-    bindsym Control+$mod+s exec "systemctl suspend && i3lock"
+	bindsym Control+$mod+l exec "i3lock -i /home/operator/Pictures/namibia2kpxlD.png -t"
+    bindsym Control+$mod+s exec "systemctl suspend && i3lock -i i3lock -i /home/operator/Pictures/namibia2kpxlD.png -t"
     bindsym Control+$mod+q exec "i3-nagbar -t warning -m 'Exit i3?' -B 'Yes' 'i3-msg exit'"
+    # Monitor switching
+        # Dual Screen Mode
+        bindsym $mod+Shift+o exec ~/Documents/arandr.sh
+        # Vertical Mode
+        bindsym $mod+Shift+p exec ~/Documents/arandrp.sh    
+        # Laptop Mode
+        bindsym $mod+Shift+i exec ~/Documents/arandrl.sh
 # Polybar
 exec_always --no-startup-id polybar main
 	# reload pb config
 	bindsym $mod+Shift+b exec $bar
-
-
+# Disable dpms
+exec --no-startup-id xset -dpms
+exec --no-startup-id xset s off
+exec --no-startup-id xset s noblank
